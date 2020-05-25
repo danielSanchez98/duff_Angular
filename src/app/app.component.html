@@ -1,0 +1,22 @@
+<div [ngSwitch]="ageStatus">
+    <div *ngSwitchCase="0">
+        <app-age-validation></app-age-validation>
+        
+
+    </div>
+    <div *ngSwitchCase="1">
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+
+    </div>
+    <div *ngSwitchCase="2">
+        <span>wrong</span>
+
+    </div>
+
+
+
+
+</div>
+

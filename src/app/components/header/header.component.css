@@ -1,0 +1,58 @@
+@font-face{
+    font-family: titulosDuff;
+    src: url(../../../assets/fonts/titulo_Duff.otf);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #FFE248;
+    font-family: 'titulosDuff';        
+}
+
+.nav-links{
+    
+    height: 10vh;
+    top:10vh;
+    display: flex;
+    width: 60%;
+}
+
+
+.nav-links li{
+    display: flex;
+    list-style: none;
+    width: 24%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a{
+    display: flex;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    color: black;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav-links a:hover{
+    background-color:#CC232B ;
+    color: #FFE248;
+}
+.logo{     
+    margin-left: 3%;
+    height: 9vh;
+}
+.logo img{     
+    height: 98%;
+}
