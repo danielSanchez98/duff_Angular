@@ -8,7 +8,7 @@ import {AgeValidationService} from './services/age-validation.service'
 })
 export class AppComponent implements OnInit {
   title = 'taller-angular';
-  ageStatus:Number=1;
+  ageStatus:Number=0;
 
   constructor(private ageValidationService : AgeValidationService ){}
   ngOnInit(){

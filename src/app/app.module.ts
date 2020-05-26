@@ -13,6 +13,7 @@ import { HomeContentComponent } from './components/home-content/home-content.com
 import { NosotrosContentComponent } from './components/nosotros-content/nosotros-content.component';
 import { CervezasContentComponent } from './components/cervezas-content/cervezas-content.component';
 import { TourContentComponent } from './components/tour-content/tour-content.component';
+import { AgeDeniedComponent } from './components/age-denied/age-denied.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TourContentComponent } from './components/tour-content/tour-content.com
     HomeContentComponent,
     NosotrosContentComponent,
     CervezasContentComponent,
-    TourContentComponent
+    TourContentComponent,
+    AgeDeniedComponent
   ],
   imports: [
     BrowserModule,
