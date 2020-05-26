@@ -36,6 +36,9 @@ main{
     align-items: center;
     justify-content: center;
 }
+.info-container{
+    flex-direction: column;
+}
 .imagen img{
     height: 100%;
 }
@@ -63,4 +66,22 @@ main{
     letter-spacing: 1px;
     color: #CC232B;
     text-align: justify;
+}
+button{
+    padding: 5px;
+    color: #FFE248;
+    background-color: #CC232B;
+    cursor: pointer;
+    height: 5vh;
+    width: 30%;
+    font-family: "textosDuff";
+    font-size: 35px;
+    border: none;
+    border-radius: 15px;
+    opacity: 0.8;
+    outline: none;
+}
+button:hover{
+    transform: scale(1.1);
+    opacity: 1;
 }
