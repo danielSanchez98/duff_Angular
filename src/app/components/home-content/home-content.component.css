@@ -1,0 +1,148 @@
+@font-face{
+    font-family: titulosDuff;
+    src: url(../../../assets/fonts/titulo_Duff.otf);
+}
+@font-face{
+    font-family: textosDuff;
+    src: url(../../../assets/fonts/texto_Duff.ttf);
+}
+body{
+    background-color: #CC232B;
+}
+.carousel-container{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.carousel-slide{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 90vh;
+}
+.carousel-slide img{
+    width: 100%;
+    height: fit-content;
+
+}
+.active {
+    z-index: 2;
+  }
+  
+  .slideInLeft {
+    animation-name: animateInLeft;
+    z-index: 2;
+  }
+  
+  .slideInRight {
+    animation-name: animateInRight;
+    z-index: 2;
+  }
+  
+  .slideOutLeft {
+    transform: translateX(-100%);
+  }
+  
+  .slideOutRight {
+    transform: translateX(100%);
+  }
+  
+  @keyframes animateInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes animateInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .wbn-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+
+  .wbn-slider-back-btn,
+.wbn-slider-next-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 20px;
+  opacity: 0.7;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  transition: all 0.2s;
+  margin: 20px;
+}
+
+.wbn-slider-back-btn:hover,
+.wbn-slider-next-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.opinion{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    color: #FFE248;
+    font-family: 'titulosDuff';  
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+   
+}
+.user-experience{
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(auto,80vh);
+}
+.cards-experience{
+    border: 10px solid #FFE248;
+    box-shadow:inset 0 0 0 10px #FFE248;
+    border-radius: 10px;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-photo{
+    display: flex;
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.user-photo img{
+    width: 70%;
+}
+.user-op{
+    height: 40%;
+    width: 85%;
+    font-family: textosDuff;
+    color: #FFE248;
+    font-size: 33px;
+}
